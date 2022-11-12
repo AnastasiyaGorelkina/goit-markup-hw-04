@@ -382,9 +382,30 @@ img {
     text-align: center;
     background-color: var(--primary-background-color);   
 }
-/* .item *{
-    outline: 2px solid tomato;
-} */
+
+.clientage-set {
+    display: flex;
+    justify-content: space-between;
+}
+.box-icon-client {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    border: 1px solid var(--icon-color-primary);
+    border-radius: 4px;
+    color: var(--icon-color-primary);
+    align-items: center;
+    justify-content: center;
+}
+.box-icon-client:hover,
+.box-icon-client:focus {
+    color: var(--accsent-color);
+    background-color: var(--secondary-ac-color);
+    border: 1px solid var(--accsent-color);
+}
+.box-icon-client .icon {
+    fill: currentColor;
+}
 /* Підвал */
 .footer {
     padding: 60px 0;
