@@ -10,6 +10,7 @@
 */
 
 :root {
+--icon-color-primary: #AFB1B8;
 --margin-gap-set: 30px;
 --logo-accsent: #000000;
 --background-basis: #F5F5F5;
@@ -119,8 +120,9 @@ h1, h2, h3, p {
     letter-spacing: 0.02em;
 }
 .site-auth .link {
-    display: inline-block;
+    display: flex;
     padding: 32px 0px;
+    align-items: center;
 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -136,8 +138,10 @@ h1, h2, h3, p {
 .site-auth .link:focus {
     color: var(--accsent-color);
 }
-.icon-auth{
-    width: 16px;
+.icon-envelope,
+.icon-smartphone {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 /* Основний контент */
@@ -146,10 +150,18 @@ h1, h2, h3, p {
 }
     /* Герой */
 .hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
     background-color: var(--secondary-background-color);
     text-align: center;
     padding: 200px 0px;
 }
+
 
 .hero-text{
     width: 696px;
@@ -186,7 +198,6 @@ h1, h2, h3, p {
     background-color: var(--button-color);
     color: var(--titel-text-color);
     cursor: pointer;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -239,8 +250,9 @@ h1, h2, h3, p {
     letter-spacing: 0.06em;
 }
 .title.name-specialty {
-    color: var(--titel-text-color);
+    margin-top: var(--margin-gap-set);
 
+    color: var(--titel-text-color);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -278,6 +290,16 @@ h1, h2, h3, p {
  .list.spec-box .item {
     flex-basis: calc((100% - var(--margin-gap-set)*3) / 4);
     margin-left: var(--margin-gap-set);
+ }
+
+ .box-icon-spec {
+    width: 270px;
+    height: 120px;
+    margin: 0;
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 
  .filters.list {
@@ -325,6 +347,31 @@ img {
     flex-basis: calc((100% - var(--margin-gap-set) * 3) / 4);
     margin-left: var(--margin-gap-set);
 }
+
+.social-networks {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-sn-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color-primary);
+    border-radius: 50%;
+}
+.box-sn-icon:hover,
+.box-sn-icon:focus {
+    color: var(--secondary-ac-color);
+    background-color: var(--accsent-color);
+}
+.icon {
+    fill: currentColor;
+}
+
 .card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
