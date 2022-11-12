@@ -412,6 +412,34 @@ img {
 
     background-color:var(--secondary-background-color) ;
 }
+.networks {
+    display: flex;
+}
+.social-net {
+    width: 206px;
+    margin-left: 70px;
+    padding-top: 12px;
+}
+.social-networks.foot.list {
+    margin-top: 20px;
+}
+.box-sn-icon.foot{
+    color: var(--secondary-ac-color);
+    background-color: #ffffff1A;
+    border-radius: 50%;
+}
+.box-sn-icon.foot:hover,
+.box-sn-icon.foot:focus {
+    color: var(--secondary-ac-color);
+    background-color: var(--accsent-color);
+}
+.title.name-specialty.social {
+    color: var(--secondary-ac-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    margin: 0;
+}
 .address {
     margin-top: 20px;
 }
